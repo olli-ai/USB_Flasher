@@ -6,6 +6,8 @@ Beagle Bone Black Linux Flash System
 
 This project provides a way to flash a BeagleBone Black via USB from a Linux machine. The project was developed during Google Summer of Code '13.
 
+Custom by Hoa Hiep Nguyen
+
 
 Build
 ----------
@@ -23,11 +25,11 @@ Press the S2 button on the BeagleBone Black and apply power to the board. The bo
 
 Connect the board to the host PC. The kernel should now identify your board as an RNDIS interface. Be sure you do not have any BOOTP servers on your network.
 
-Go to bin/ and execute ```flash_script.sh``` It needs the flashing image as argument to be provided.
+Go to bin/ and execute ```olli_flash_script.sh``` It needs the flashing image as argument to be provided.
 
 For now only .xz compressed images are supported.
 
-```sudo ./flash_script.sh  [ debian | ubuntu | image.xz ]```
+```sudo ./olli_flash_script.sh  [ debian | ubuntu | image.img ]```
 
 * debian and ubuntu will use tarball from armhf.com website
 
@@ -124,9 +126,9 @@ cp /path/to/kernel/arch/arm/boot/zImage .
 cp /path/to/kernel/arch/arm/boot/dts/am335x-boneblack.dtb .
 mkimage -f maker.its FIT
 ```
-* At this point we have all things put into place. You need to copy the binary blobs in the bin/ folder and run ```flash_script.sh```
+* At this point we have all things put into place. You need to copy the binary blobs in the bin/ folder and run ```olli_flash_script.sh```
 
 #Contact
-vvu@vdev.ro
-
-vvu on #beagle, #beagle-gsoc
+hoahiepk10@gmail.com
+Hope everyone have fun!!!
+Kael!!!
