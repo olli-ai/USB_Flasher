@@ -97,7 +97,7 @@ then
     fi
 
     echo -n "Waiting for the BeagleBone Black to be mounted"
-    for i in {1..12}
+    for i in {1..20}
     do
         echo -n "."
         sleep 1

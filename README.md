@@ -1,7 +1,5 @@
 BBBlfs
 ======
-[![Build Status](https://travis-ci.org/ungureanuvladvictor/BBBlfs.svg?branch=master)](https://travis-ci.org/ungureanuvladvictor/BBBlfs)
-
 Beagle Bone Black Linux Flash System
 
 This project provides a way to flash a BeagleBone Black via USB from a Linux machine. The project was developed during Google Summer of Code '13.
@@ -127,8 +125,3 @@ cp /path/to/kernel/arch/arm/boot/dts/am335x-boneblack.dtb .
 mkimage -f maker.its FIT
 ```
 * At this point we have all things put into place. You need to copy the binary blobs in the bin/ folder and run ```olli_flash_script.sh```
-
-#Contact
-hoahiepk10@gmail.com
-Hope everyone have fun!!!
-Kael!!!
